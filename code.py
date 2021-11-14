@@ -97,7 +97,7 @@ class KnightsTour:
         else:
             return f'No more possible moves!\nYour knight visited {result} squares!'
 
-    # computer solves the puzzle
+    # computer solves the puzzle BACKTRACKING ALGORITHM
     def solve(self, position, count=1):
         self.player = 'computer'
         if count == self.board.x * self.board.y:
